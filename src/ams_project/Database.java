@@ -18,9 +18,9 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class Database {
-    private String filedir = "C:\\Users\\Dell\\Documents\\Images\\";
-    private String HTMLdir = "C:\\Users\\Dell\\Desktop\\external\\";
-    private String connString = "jdbc:ucanaccess://C:\\Users\\Dell\\Documents\\OOPdb.accdb";
+    private String filedir = "C:\\Users\\Dell\\Documents\\Images\\"; //create a directory to where image files will be saved
+    private String HTMLdir = "C:\\Users\\Dell\\Desktop\\external\\"; //the directory of external html files
+    private String connString = "jdbc:ucanaccess://C:\\Users\\Dell\\Documents\\OOPdb.accdb"; //directory of the ms database file
     private String query;
     
     public String getFileDirectory(){
