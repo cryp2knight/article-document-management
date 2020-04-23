@@ -1,5 +1,5 @@
 # article-document-management
-An app good for managing your documents and articles.  Requires Microsoft Access as its Database!
+An app good for managing your documents and articles.
 
 ##  Requirements
 1. Java 8
