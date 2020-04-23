@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane prefHeight="719.0" prefWidth="1011.0" stylesheets="@project.css" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ams_project.DashboardController">
+  <center>
+    <TabPane fx:id="tabpane" prefHeight="200.0" prefWidth="200.0" stylesheets="@project.css" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Read Article">
+          <content>
+                  <BorderPane stylesheets="@project.css">
+                     <center>
+                  <WebView fx:id="webview1" prefHeight="200.0" prefWidth="200.0" />
+                     </center>
+                     <bottom>
+                        <HBox fx:id="toolbar" alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="809.0" styleClass="pnl1" stylesheets="@project.css" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="btnEdit1" mnemonicParsing="false" onAction="#homeRefresh" prefHeight="34.0" prefWidth="112.0" styleClass="btn" stylesheets="@project.css" text="Home">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnEdit" disable="true" mnemonicParsing="false" onAction="#editArticlePane" prefHeight="34.0" prefWidth="112.0" styleClass="btn" stylesheets="@project.css" text="Edit">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btnDelete" disable="true" mnemonicParsing="false" onAction="#deleteArticle" prefHeight="34.0" prefWidth="112.0" styleClass="btn" stylesheets="@project.css" text="Delete">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#printJob" prefHeight="34.0" prefWidth="112.0" styleClass="btn" stylesheets="@project.css" text="Print">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets right="10.0" />
+                           </BorderPane.margin>
+                        </HBox>
+                     </bottom>
+                  </BorderPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </center>
+  <left>
+    <Accordion fx:id="sections" styleClass="pnl1" stylesheets="@project.css">
+      <panes>
+        <TitledPane animated="false" expanded="true" styleClass="first-titled-pane" stylesheets="@project.css" text="News" fx:id="x1">
+          <content>
+            <ListView prefHeight="200.0" prefWidth="200.0" styleClass="lbl" stylesheets="@project.css" />
+          </content>
+        </TitledPane>
+      </panes>
+    </Accordion>
+  </left>
+  <top>
+    <MenuBar styleClass="pnl1" stylesheets="@project.css">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#showCreateArticlePane" text="Create Article" />
+                  <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Categories" />
+                  <MenuItem mnemonicParsing="false" text="Password" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </top>
+</BorderPane>
