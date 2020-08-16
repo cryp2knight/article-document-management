@@ -16,7 +16,7 @@ private String connString = "jdbc:ucanaccess://C:\\Users\\Dell\\Documents\\OOPdb
 
 ## Snippets
 
-![](https://i.postimg.cc/RV5gd2rG/Annotation-2020-04-23-202934.png) ![](https://i.postimg.cc/LJcL0GNG/djhjsd.png) ![](https://i.postimg.cc/0KzNvyNn/dsdsd.png) ![](https://i.postimg.cc/S2r9RRkp/sasa.png)
+![](https://i.postimg.cc/RV5gd2rG/Annotation-2020-04-23-202934.png) ![](https://i.postimg.cc/N0MDLcTG/djhjsd.png) ![](https://i.postimg.cc/qqL68tVP/dsdsd.png) ![](https://i.postimg.cc/j2V48n1C/sasa.png)
 
 
 
